@@ -1,0 +1,9 @@
+<h1>Timeline#index</h1>
+<div>
+  <% @list.each do |item| %>
+    <div>
+      <b><%= item.date %></b><br>
+      <%= item.description %><br><br>
+    </div>
+  <% end %>
+</div>
