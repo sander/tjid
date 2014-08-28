@@ -1,5 +1,12 @@
 <h1>Timeline#index</h1>
 <div>
+  <% @list.days.each do |day| %>
+    <div>
+      <%= day %>
+    </div>
+  <% end %>
+</div>
+<div>
   <% @list.each do |item| %>
     <div>
       <b><%= item.date %></b><br>

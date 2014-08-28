@@ -5,6 +5,9 @@ class TimelineController < ApplicationController
   end
 
   class ItemList < Array
+    def days
+      (Date.parse(self[0].date))..(Date.parse(self[-1].date))
+    end
   end
 
   class LogFile < Redcarpet::Render::Base
